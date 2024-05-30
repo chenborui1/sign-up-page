@@ -1,0 +1,186 @@
+
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  * {
+    margin: 0;
+  }
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  
+  input, button, textarea, select {
+    font: inherit;
+  }
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  #root, #__next {
+    isolation: isolate;
+  }
+
+  .container {
+    display: flex;
+    position: relative;
+
+  }
+  
+ 
+  .left, .right {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+
+
+
+  .left{
+    flex: 1.25;
+    height: 100vh;
+    justify-content: center;
+   
+    
+  }
+  .right {
+    flex: 2;
+    background-color: rgba(238, 240, 236, 0.47);
+   
+  }
+
+  .leaves {
+    height:inherit;
+    min-width: 500px;
+    
+  }
+
+
+  .banner,
+.credits {
+    position: absolute;
+    margin: 0;
+    
+    
+}
+.banner {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  background-color: black;
+  background: rgba(30, 32, 29, 0.485);
+}
+
+.odin-logo {
+  width: min(150px, 100%);
+  height: auto;
+  
+}
+
+.odin-text {
+  margin-top: 40px;
+  color: white;
+  font-size: 5rem;
+  
+}
+.credits, a {
+  margin-top: calc(100vh - 50px);
+  align-self: center;
+  color: white;
+
+}
+.top, .bottom {
+  padding-left: 35px;
+}
+.top {
+  flex: 1;
+  font-weight: bold;
+  font-size: 3vh;
+  margin-right: 200px;
+  
+}
+
+.top > .top-text {
+  margin-top: 75px;
+  margin-bottom: 20px;
+}
+
+.middle {
+  flex: 1;
+  background-color: white;
+  box-shadow: 10px 5px 5px rgb(213, 211, 211);
+  
+}
+
+.middle > .sign-form, .middle > p{
+  margin-left: 35px;
+  min-width: 600px;
+}
+
+.bottom {
+ flex: 1;
+}
+.bottom .create-btn {
+  margin-top: 50px;
+  margin-bottom: 25px;
+  background-color: #596D48;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 40px;
+  padding-right: 40px;
+  border: none;
+  transition: 0.3s;
+}
+
+.bottom .create-btn:hover {
+  box-shadow: 5px 5px 5px rgb(213, 211, 211);
+}
+.bottom p {
+  font-size: 20px;
+}
+.bottom .log-in {
+  color: #596D48;
+  text-decoration: none;
+  font-weight: bold;
+}
+.sign-form {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin: 0;
+  flex-wrap: wrap;
+  margin-right: 300px;
+}
+
+.sign-form input {
+  width: 250px;
+  transition: 0.3s;
+  border: 1px lightgrey solid;
+  border-radius: 5px;
+}
+.sign-form input:hover {
+  box-shadow: 5px 5px 5px rgb(213, 211, 211);
+}
+
+
+.sign-form input:focus{
+  outline: 2px solid green;
+  border: white;  
+  box-shadow: 5px 5px 5px rgb(213, 211, 211);
+}
+
+
+
+.middle p {
+  font-weight: bold;
+  font-size: 1.5rem;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}

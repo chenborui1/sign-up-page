@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            <img class= "leaves" src="images/leaves.avif" alt="image of leaves">
+            <div class="banner">
+                <img class = "odin-logo" src="images/odin-logo.png" alt="odin logo">
+                <span class="odin-text">ODIN</span>
+            </div>
+            <div class="credits">
+                <span>Photo by <a href="#">Halie West</a> on <a href="#">Unsplash</a></span>
+            </div>
+        </div>
+        <div class="right">
+            <div class="top">
+                <p class="top-text">This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.
+                    <br>Sign up <span style="font-style: italic;">now</span> to get started.
+                </p>
+                <p>You <span style="font-style: italic;">know</span> you want to.</p>
+            </div>
+            <div class="middle">
+                <p>Let's do this!</p>
+                <form class= "sign-form" action="/index.html" method="post" id="form1">
+                    <div class="form">
+                        <label for="fname">FIRST NAME</label><br>
+                        <input type="text" id="fname" name="fname" required>
+                    </div>
+                   <div class="form">
+                    <label for="lname">LAST NAME</label><br>
+                        <input type="text" id="lname" name="lname" required>
+                   </div>
+                   <div class="form">
+                    <label for="email">EMAIL</label><br>
+                        <input type="email" id="email" name="email" required>
+                   </div>
+                   <div class="form">
+                    <label for="phone">PHONE NUMBER</label><br>
+                        <input type="tel" id="phone" name="phone" required>
+                   </div>
+                   <div class="form">
+                    <label for="pwd">PASSWORD</label><br>
+                        <input type="password" id="pwd" name="pwd" required>
+                   </div>
+                   <div class="form">
+                    <label for="confirm-pwd">CONFIRM PASSWORD</label><br>
+                        <input type="password" id="confirm-pwd" name="confirm-pwd" required>
+                   </div>
+                </form>
+            </div>
+            <div class="bottom">
+                <button form="form1" value="Submit" class="create-btn">Create Account</button>
+                <p>Already have an account? <a href="#" class="log-in">Log in</a></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
